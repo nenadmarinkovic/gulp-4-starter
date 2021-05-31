@@ -1,4 +1,4 @@
-# Gulp 4 Starter Boilerplate using Sass and Gulp 4
+# Gulp 4 Starter Boilerplate
 
 ## Quickstart guide
 
