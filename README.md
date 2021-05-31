@@ -1,4 +1,4 @@
-# Gulp 4 Starter Boilerplate
+# Gulp 4 Starter 🚀
 
 ## Quickstart guide
 
