@@ -1,5 +1,6 @@
 const { src, dest, watch, series, parallel } = require("gulp");
-
+const gulp = require("gulp");
+const babel = require("gulp-babel");
 const sourcemaps = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const concat = require("gulp-concat");
@@ -28,6 +29,11 @@ function styles() {
 
 function scripts() {
   return src([files.jsPath])
+    .pipe(
+      babel({
+        presets: ["@babel/preset-env"],
+      })
+    )
     .pipe(concat("all.js"))
     .pipe(uglify())
     .pipe(dest("dist"));

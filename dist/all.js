@@ -1,1 +1,1 @@
-console.log("Load script 1"),console.log("Load script 2");
+"use strict";console.log("Load script 1");var isA=function(o){"A"==o?console.log("A"):console.log("Not A")};isA("A"),isA("ABC"),console.log("Load script 2");
