@@ -9,6 +9,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 var replace = require("gulp-replace");
+var notify = require("gulp-notify");
 
 var browserSync = require("browser-sync").create();
 var reload = browserSync.reload;
@@ -24,7 +25,8 @@ function styles() {
     .pipe(sass())
     .pipe(postcss([autoprefixer, cssnano]))
     .pipe(sourcemaps.write("."))
-    .pipe(dest("dist"));
+    .pipe(dest("dist"))
+    .pipe(notify("Styles completed!"));
 }
 
 function scripts() {
@@ -36,7 +38,8 @@ function scripts() {
     )
     .pipe(concat("all.js"))
     .pipe(uglify())
-    .pipe(dest("dist"));
+    .pipe(dest("dist"))
+    .pipe(notify("Scripts completed!"));
 }
 
 function cache() {
