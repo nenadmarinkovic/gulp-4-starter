@@ -8,6 +8,8 @@
 
 Gulp is configured to run the following functions:
 
+* Run server at `http://localhost:3000/`
+* Watch for changes on HTML, SCSS, JS files
 * Compile the SCSS files to CSS
 * Autoprefix and minify the CSS file
 * Concatenate the JS files
