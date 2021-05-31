@@ -2,11 +2,11 @@
 
 ## Quickstart guide
 
-* git clone https://github.com/nenadmarinkovic/gulp-4-starter"
+* Run `git clone https://github.com/nenadmarinkovic/gulp-4-starter`
 * Run `npm install`
 * Run `gulp` to run the default Gulp task
 
-In this proejct, Gulp is configured to run the following functions:
+Gulp is configured to run the following functions:
 
 * Compile the SCSS files to CSS
 * Autoprefix and minify the CSS file
