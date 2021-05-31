@@ -1,5 +1,5 @@
 const { src, dest, watch, series, parallel } = require("gulp");
-const gulp = require("gulp");
+
 const babel = require("gulp-babel");
 const sourcemaps = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
@@ -8,11 +8,10 @@ const uglify = require("gulp-uglify");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
-var replace = require("gulp-replace");
-var notify = require("gulp-notify");
-
-var browserSync = require("browser-sync").create();
-var reload = browserSync.reload;
+const replace = require("gulp-replace");
+const notify = require("gulp-notify");
+const browserSync = require("browser-sync").create();
+const reload = browserSync.reload;
 
 const files = {
   scssPath: "app/scss/**/*.scss",
