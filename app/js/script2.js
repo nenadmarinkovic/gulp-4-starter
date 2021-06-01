@@ -1,3 +1,5 @@
+// Just for purpose of testing, delete in dev mode
+
 console.log("Load script 2 ✅");
 
 // ES2017 includes supported
