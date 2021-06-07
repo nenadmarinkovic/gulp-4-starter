@@ -1,4 +1,4 @@
-// Just for purpose of testing, delete in dev mode
+// Just for testing, delete in dev mode
 
 console.log("Load script 2 ✅");
 
